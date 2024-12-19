@@ -65,29 +65,31 @@ function createMarket(
     string[] memory _outcomes,
     MarketCategory _category
 ) external payable
-
-## Betting Mechanism
+```
+### Betting Mechanism
 ```solidity
 function placeBet(
     uint256 _marketId,
     uint256 _outcomeIndex
 ) external payable
+```
 
-
-## Market Resolution
+### Market Resolution
 ```solidity
 function resolveMarket(
     uint256 _marketId
     ) external nonReentrant
+```
 
-## Oracle Bet Resolution
+### Oracle Bet Resolution
 ```solidity
 function reolveBet(
     uint256 _marketId,
     uint256 memory _outcome
     ) external nonReentrant
+```
 
-## Testing Framework
+### Testing Framework
 -  Comprehensive test suite covering:
       Integration tests
       Unit tests
@@ -96,27 +98,28 @@ function reolveBet(
       Edge cases
       Fee calculations
 
-## Development Setup
+### Development Setup
 
 1. Clone the repository
 2. Install dependencies:
  ```solidity
 forge install
-
+```
 3. Run tests:
  ```solidity
 forge test
-
+```
 4. Deploy contracts:
  ```solidity
  forge create --rpc-url <your_rpc_url> --private-key <your_private_key> --constructor-args <constructor_args>
-
+```
 5. Interact with contracts:
 
 ```solidity
 cast <contract_address> <function_name> <function_args>
+````
 
-## Architecture
+### Architecture
 Quintus Protocol
 ├── QuintusMarket (Main Contract)
 │   ├── Market Creation
@@ -127,10 +130,10 @@ Quintus Protocol
     ├── Authorization System
     └── Outcome Verification
 
-## License
+### License
 This project is licensed under the MIT License.
 
-## Contributing
+### Contributing
 
  1.   Fork the repository
  2.   Create feature branch
